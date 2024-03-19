@@ -32,3 +32,11 @@ public class GasContainer : Container, IHazardNotifier
         
     }
 }
+
+public class OverfillException : Exception
+{
+    public OverfillException(string cargoMassExceedsAllowablePayload)
+    {
+        throw new NotImplementedException();
+    }
+}
