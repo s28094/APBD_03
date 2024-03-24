@@ -1,5 +1,4 @@
 namespace DefaultNamespace;
-using System;
 
 public abstract class Container
 {
