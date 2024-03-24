@@ -25,7 +25,7 @@ public class LiquidContainer : Container, IHazardNotifier
 
     public override void EmptyCargo()
     {
-        MassOfCargo = 0.05 * MassOfCargo;
+        MassOfCargo = 0;
     }
 
     public override void NotifyHazard(string containerNumber)
