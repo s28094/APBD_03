@@ -32,5 +32,3 @@ public class GasContainer : Container, IHazardNotifier
         
     }
 }
-
-public class OverfillException(string message) : Exception(message);
