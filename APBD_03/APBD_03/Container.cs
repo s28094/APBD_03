@@ -20,4 +20,5 @@ public abstract class Container
 
     public abstract void LoadCargo(double cargoMass);
     public abstract void EmptyCargo();
+    public abstract void NotifyHazard(string containerNumber);
 }

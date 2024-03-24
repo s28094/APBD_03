@@ -26,7 +26,7 @@ public class GasContainer : Container, IHazardNotifier
         MassOfCargo = 0.05 * MassOfCargo;
     }
 
-    public void NotifyHazard(string containerNumber)
+    public override void NotifyHazard(string containerNumber)
     {
         Console.WriteLine($"Hazardous situation detected in container: {containerNumber}");
         

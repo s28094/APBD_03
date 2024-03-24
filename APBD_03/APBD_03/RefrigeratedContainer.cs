@@ -27,7 +27,7 @@ public class RefrigeratedContainer : Container, IHazardNotifier
         MassOfCargo = 0;
     }
 
-    public void NotifyHazard(string containerNumber)
+    public override void NotifyHazard(string containerNumber)
     {
         Console.WriteLine($"Hazardous situation detected in refrigerated container: {containerNumber}");
     }
