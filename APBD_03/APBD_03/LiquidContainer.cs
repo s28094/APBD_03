@@ -2,8 +2,8 @@ namespace DefaultNamespace;
 
 public class LiquidContainer : Container, IHazardNotifier
 {
-    public bool IsHazardous { get; }
-    public double HazardCapacityPercentage { get; }
+    public bool IsHazardous { get; set;}
+    public double HazardCapacityPercentage { get; set;}
     
     public LiquidContainer(string serialNumber, double height, double tareWeight, double depth, double maxPayload, bool isHazardous)
         : base(serialNumber, height, tareWeight, depth, maxPayload)

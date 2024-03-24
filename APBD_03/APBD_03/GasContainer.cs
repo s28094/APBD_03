@@ -2,7 +2,7 @@ namespace DefaultNamespace;
 
 public class GasContainer : Container, IHazardNotifier
 {
-    public double Pressure { get; }
+    public double Pressure { get; set; }
 
     public GasContainer(string serialNumber, double height, double tareWeight, double depth, double maxPayload, double pressure)
         : base(serialNumber, height, tareWeight, depth, maxPayload)
@@ -33,10 +33,4 @@ public class GasContainer : Container, IHazardNotifier
     }
 }
 
-public class OverfillException : Exception
-{
-    public OverfillException(string cargoMassExceedsAllowablePayload)
-    {
-        throw new NotImplementedException();
-    }
-}
+public class OverfillException(string message) : Exception(message);
