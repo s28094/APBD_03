@@ -5,8 +5,8 @@ public class RefrigeratedContainer : Container, IHazardNotifier
     public string ProductType { get;set; }
     public double RequiredTemperature { get;set; }
 
-    public RefrigeratedContainer(string serialNumber, double height, double tareWeight, double depth, double maxPayload, string productType, double requiredTemperature)
-        : base(serialNumber, height, tareWeight, depth, maxPayload)
+    public RefrigeratedContainer( double height, double tareWeight, double depth, double maxPayload, string productType, double requiredTemperature)
+        : base("C", height, tareWeight, depth, maxPayload)
     {
         ProductType = productType;
         RequiredTemperature = requiredTemperature;

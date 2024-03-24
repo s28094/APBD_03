@@ -5,8 +5,8 @@ public class LiquidContainer : Container, IHazardNotifier
     public bool IsHazardous { get; set;}
     public double HazardCapacityPercentage { get; set;}
     
-    public LiquidContainer(string serialNumber, double height, double tareWeight, double depth, double maxPayload, bool isHazardous)
-        : base(serialNumber, height, tareWeight, depth, maxPayload)
+    public LiquidContainer( double height, double tareWeight, double depth, double maxPayload, bool isHazardous)
+        : base("L", height, tareWeight, depth, maxPayload)
     {
         IsHazardous = isHazardous;
         HazardCapacityPercentage = isHazardous ? 0.5 : 0.9;
